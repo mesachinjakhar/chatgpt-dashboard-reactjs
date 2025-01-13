@@ -1,4 +1,5 @@
-import Dashboard from "./components/Dashbaord";
+import Dashboard from "./components/Dashboard";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
   return (
