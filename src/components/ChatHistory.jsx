@@ -22,7 +22,7 @@ const ChatHistory = () => {
               activeIndex === 1 ? "bg-[#212020]" : ""
             }`}
           >
-            Chat 1
+            <Link to={"/sad"}>Chat 1</Link>
             {activeIndex === 1 ? <i className="bi bi-three-dots"></i> : ""}
           </li>
 

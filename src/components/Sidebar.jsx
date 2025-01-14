@@ -11,7 +11,7 @@ const Sidebar = () => {
 
   if (isHide === false) {
     return (
-      <div className="w-[21%] bg-[#161716] h-[100vh] fixed">
+      <div className="w-[27%] bg-[#161716] h-[100vh]">
         <SidebarHeader />
         <ChatHistory />
         <SidebarFooter />

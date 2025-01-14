@@ -8,7 +8,6 @@ const SidebarHeader = () => {
   const dispatch = useDispatch();
 
   function handleHide() {
-    console.log("handle hide");
     dispatch(hideSidebar());
   }
 
