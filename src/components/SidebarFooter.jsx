@@ -2,10 +2,10 @@ import React from "react";
 
 const SidebarFooter = () => {
   return (
-    <div className="absolute bottom-0 px-3 py-2 bg-[#161716]">
-      <div className="flex gap-3 hover:bg-[#212020] px-3 py-2 rounded-lg">
+    <div className="absolute bottom-0 px-3 py-2 bg-[#161716] w-full">
+      <div className="flex gap-3 hover:bg-[#212020] px-3 py-2 rounded-lg cursor-pointer">
         <button>
-          <i class="bi bi-credit-card-2-back"></i>
+          <i className="bi bi-credit-card-2-back"></i>
         </button>
         <div>
           <p className="text-[14px]">Upgrade plan</p>

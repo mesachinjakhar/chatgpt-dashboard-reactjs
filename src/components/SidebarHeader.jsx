@@ -19,7 +19,7 @@ const SidebarHeader = () => {
           onClick={handleHide}
           className="px-3 py-2 rounded-xl  hover:bg-[#212020] "
         >
-          <i class="bi bi-window-sidebar "></i>
+          <i className="bi bi-window-sidebar "></i>
         </button>
       </div>
       <div>
