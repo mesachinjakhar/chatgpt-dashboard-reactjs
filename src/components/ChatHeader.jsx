@@ -35,13 +35,13 @@ const ChatHeader = () => {
         ) : (
           ""
         )}
-        <div className="px-3 py-2 rounded-xl  hover:bg-[#161716] flex justify-center">
+        <div className="px-3 py-2 rounded-xl  hover:bg-[#161716] flex justify-center cursor-pointer">
           <button className="">ChatGPT</button>
           <i class="bi bi-arrow-down-short"></i>
         </div>
       </div>
       {/* { left side} */}
-      <div className="flex items-center gap-3 px-2">
+      <div className="flex items-center gap-3 px-2 cursor-pointer">
         <div className=" px-4 py-2 rounded-full hover:bg-[#161716] flex items-center border-[0.3px]">
           <i className="bi bi-caret-up-square text-sm mr-2"></i>
           <button className="text-sm">Share</button>

@@ -3,9 +3,11 @@ import { Link } from "react-router";
 
 const ChatHistory = () => {
   const [activeIndex, setActiveIndex] = useState("");
+  const [hoverIndex, setHoverIndex] = useState("");
 
   function handleIndex(index) {
     return () => {
+      setHoverIndex("");
       setActiveIndex(index);
     };
   }
@@ -21,9 +23,16 @@ const ChatHistory = () => {
             className={`px-3 py-2 rounded-lg text-sm flex justify-between ${
               activeIndex === 1 ? "bg-[#212020]" : ""
             }`}
+            onMouseEnter={() => {
+              if (activeIndex != 1) {
+                setHoverIndex(1);
+              }
+            }}
+            onMouseLeave={() => setHoverIndex("")}
           >
             <Link to={"/sad"}>Chat 1</Link>
             {activeIndex === 1 ? <i className="bi bi-three-dots"></i> : ""}
+            {hoverIndex === 1 ? <i className="bi bi-three-dots"></i> : ""}
           </li>
 
           <li
@@ -32,9 +41,16 @@ const ChatHistory = () => {
             className={`px-3 py-2 rounded-lg text-sm flex justify-between ${
               activeIndex === 2 ? "bg-[#212020]" : ""
             }`}
+            onMouseEnter={() => {
+              if (activeIndex != 2) {
+                setHoverIndex(2);
+              }
+            }}
+            onMouseLeave={() => setHoverIndex("")}
           >
-            Chat 1
+            <Link to={"/sad"}>Chat 1</Link>
             {activeIndex === 2 ? <i className="bi bi-three-dots"></i> : ""}
+            {hoverIndex === 2 ? <i className="bi bi-three-dots"></i> : ""}
           </li>
           <li
             key={3}
